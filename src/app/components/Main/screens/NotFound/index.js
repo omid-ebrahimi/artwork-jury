@@ -7,9 +7,9 @@ export default function NotFound() {
         <Grid>
             <Row>
                 <CellCenter desktopColumns={10} tabletColumns={8} phoneColumns={4}>
-                    <h1 className='color-error flex justify-center'>
+                    <h2 className='color-error flex justify-center'>
                         صفحه‌ای که دنبال آن بودید پیدا نشد!
-                    </h1>
+                    </h2>
                 </CellCenter>
             </Row>
         </Grid>
