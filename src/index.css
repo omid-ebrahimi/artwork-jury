@@ -1,6 +1,7 @@
 @import '~basscss-flexbox/index.css';
 @import '~basscss-typography/index.css';
 @import '~@material/react-layout-grid/dist/layout-grid.css';
+@import '~@material/react-text-field/dist/text-field.css';
 @import "./assets/fonts/iransans/font-face.css";
 @import "./assets/css/colors.css";
 
