@@ -1,4 +1,5 @@
 @import "./assets/fonts/iransans/font-face.css";
+@import '~@material/react-layout-grid/dist/layout-grid.css';
 
 body {
   margin: 0;
