@@ -1,5 +1,6 @@
 import React from 'react';
 import {Grid, Row} from '@material/react-layout-grid';
+import {Headline5} from '@material/react-typography';
 import CellCenter from "../../../../../components/CellCenter";
 import image from './image.svg';
 
@@ -8,9 +9,9 @@ export default function NotFound() {
         <Grid>
             <Row>
                 <CellCenter desktopColumns={10} tabletColumns={8} phoneColumns={4}>
-                    <h2 className='theme-color-error center'>
+                    <Headline5 className='theme-color-error center'>
                         صفحه‌ای که دنبال آن بودید پیدا نشد!
-                    </h2>
+                    </Headline5>
                 </CellCenter>
             </Row>
             <Row>
