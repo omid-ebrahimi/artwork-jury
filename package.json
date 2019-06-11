@@ -6,6 +6,7 @@
     "@material/react-button": "^0.13.0",
     "@material/react-layout-grid": "^0.13.0",
     "@material/react-text-field": "^0.13.0",
+    "@material/react-typography": "^0.13.0",
     "basscss-flexbox": "^1.0.2",
     "basscss-grid": "^2.0.0",
     "basscss-layout": "^3.1.0",

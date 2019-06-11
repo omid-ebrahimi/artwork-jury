@@ -1239,6 +1239,15 @@
     classnames "^2.2.6"
     react "^16.4.2"
 
+"@material/react-typography@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@material/react-typography/-/react-typography-0.13.0.tgz#1a4c1e48ed12ff81900dd7cf5f5b265fffc47525"
+  integrity sha512-A4xCI50cKn/POxvr1d5HSSum/l8i6oWh4iOqw3820o4CAbd/vowZ/ylZK3i1pmKVl/1ljfCqHCnu8CSsNg6ZSA==
+  dependencies:
+    "@material/typography" "^1.0.0"
+    classnames "^2.2.6"
+    react "^16.4.2"
+
 "@material/ripple@^1.0.0", "@material/ripple@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@material/ripple/-/ripple-1.1.0.tgz#236016fb30c8366faf143297df2c38166d84ffbc"
