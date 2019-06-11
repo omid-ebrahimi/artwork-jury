@@ -1,7 +1,7 @@
 import React from 'react';
 import {Cell} from "@material/react-layout-grid";
 
-const CellCenter = ({desktopColumns, tabletColumns, phoneColumns, children, ...props}) => {
+function CellCenter ({desktopColumns, tabletColumns, phoneColumns, children, ...props}) {
 
     const desktopSideColumns = (12 - desktopColumns) / 2;
     const tabletSideColumns = (8 - tabletColumns) / 2;
@@ -18,6 +18,6 @@ const CellCenter = ({desktopColumns, tabletColumns, phoneColumns, children, ...p
                   phoneColumns={phoneSideColumns}/>
         </>
     );
-};
+}
 
 export default CellCenter;
