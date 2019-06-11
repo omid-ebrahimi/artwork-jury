@@ -8,7 +8,7 @@ export default function NotFound() {
         <Grid>
             <Row>
                 <CellCenter desktopColumns={10} tabletColumns={8} phoneColumns={4}>
-                    <h2 className='color-error center'>
+                    <h2 className='theme-color-error center'>
                         صفحه‌ای که دنبال آن بودید پیدا نشد!
                     </h2>
                 </CellCenter>

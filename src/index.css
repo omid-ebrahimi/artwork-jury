@@ -1,18 +1,17 @@
+@import '~basscss-grid/lib/grid.css';
 @import '~basscss-flexbox/index.css';
 @import '~basscss-typography/index.css';
 @import '~@material/react-layout-grid/dist/layout-grid.css';
 @import '~@material/react-text-field/dist/text-field.css';
 @import '~@material/react-button/dist/button.css';
 @import "./assets/fonts/iransans/font-face.css";
-@import "./assets/css/colors.css";
+@import "./assets/css/theme/index.css";
 
 body {
   margin: 0;
   padding: 0;
   direction: rtl;
-  font-family: IRANSans, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: var(--theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
