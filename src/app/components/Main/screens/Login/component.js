@@ -4,7 +4,8 @@ import {Input} from "@material/react-text-field";
 import Button from '@material/react-button';
 import {Headline5} from '@material/react-typography';
 import CellCenter from "../../../../../components/CellCenter";
-import PersianTextField from "../../../../../components/PersianTextField";
+import LoginTextField from './components/LoginTextField';
+import image from "../../../../../logo.svg";
 import './component.css';
 
 function Login() {
@@ -14,15 +15,16 @@ function Login() {
                 <CellCenter dir='rtl' desktopColumns={4} tabletColumns={6} phoneColumns={4}
                             className='flex flex-column justify-center items-center'>
                     <Headline5 className='col-10'>ورود به پنل داوری</Headline5>
-                    <PersianTextField label='نام کاربری' className='col-10 mt2' outlined>
+                    <LoginTextField label='نام کاربری'>
                         <Input/>
-                    </PersianTextField>
-                    <PersianTextField label='رمز عبور' className='col-10 mt2' outlined>
+                    </LoginTextField>
+                    <LoginTextField label='رمز عبور'>
                         <Input/>
-                    </PersianTextField>
+                    </LoginTextField>
                     <Button className='col-10 mt2' raised>
                         ورود
                     </Button>
+                    <img src={image} className='mt2' width='30%' alt='404 - Not Found'/>
                 </CellCenter>
             </Row>
         </Grid>
