@@ -1,5 +1,5 @@
 import React from 'react';
-import PersianTextField from "../../../../../../../components/PersianTextField";
+import PersianTextField from "../../../../../../components/PersianTextField";
 
 function LoginTextField({children, ...props}) {
     return (
