@@ -1,0 +1,4 @@
+.label {
+    font-family: var(--theme-font-family);
+    padding-bottom: .05em;
+}
