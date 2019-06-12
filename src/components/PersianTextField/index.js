@@ -1,10 +1,10 @@
 import React from 'react';
 import TextField from '@material/react-text-field';
-import './index.css';
+import styles from './index.module.css';
 
 function PersianTextField({children, ...props}) {
     return (
-        <TextField {...props} floatingLabelClassName='label'>
+        <TextField {...props} floatingLabelClassName={styles.label}>
             {children}
         </TextField>
     );
