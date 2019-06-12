@@ -1,7 +1,7 @@
 import React from "react";
 import {Switch, Route} from "react-router-dom";
 import NotFound from "./screens/NotFound";
-import Login from "./screens/Login/component";
+import Login from "./screens/Login/container";
 
 function Main() {
     return (

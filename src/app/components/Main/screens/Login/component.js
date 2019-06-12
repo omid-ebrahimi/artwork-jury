@@ -5,12 +5,21 @@ import LoginForm from "./LoginForm";
 import image from "../../../../../logo.svg";
 import {Headline5} from "@material/react-typography";
 
-function Login() {
+function Login({setToken}) {
+
     function onSubmit(values, {setSubmitting}) {
-        setTimeout(() => {
-            // this.handleSave(values);
-            setSubmitting(false);
-        }, 400);
+        login(values);
+        setSubmitting(false);
+    }
+
+    function login({username, password}) {
+        setToken({
+            "access_token": "fczaccTBcV4SFsG6eghDcYzng6hVGp",
+            "expires_in": 900,
+            "token_type": "Bearer",
+            "scope": "read write groups",
+            "refresh_token": "s0yFmDaKzyf8XkPtBlfjRwyLCQ0GbX"
+        }, new Date());
     }
 
     return (
