@@ -24,7 +24,7 @@ function LoginForm({onSubmit}) {
                     <Form className='col-10'>
                         <Field name='username' label='نام کاربری' component={FormTextField}/>
                         <Field name='password' label='رمز عبور' type='password' component={FormTextField}/>
-                        <Button type='submit' className='col-12 mt2' disabled={isSubmitting} raised>
+                        <Button type='submit' className='col-12 mt1' disabled={isSubmitting} raised>
                             ورود
                         </Button>
                     </Form>
