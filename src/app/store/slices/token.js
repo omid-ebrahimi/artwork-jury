@@ -22,6 +22,6 @@ export const token = createSlice({
     initialState,
     reducers: {
         setToken,
-        logout: () => initialState
+        cleanToken: () => initialState
     }
 });
