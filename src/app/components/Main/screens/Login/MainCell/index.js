@@ -1,5 +1,5 @@
 import React from 'react';
-import CellCenter from "../../../../../../../components/CellCenter";
+import CellCenter from "../../../../../../components/CellCenter";
 
 function MainCell({children}) {
     return (
