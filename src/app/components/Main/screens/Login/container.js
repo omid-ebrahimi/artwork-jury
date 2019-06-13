@@ -1,16 +1,20 @@
 import {connect} from 'react-redux';
-import {token} from '../../../../store/slices';
-import Login from './component';
+import LoginForm from './component';
+import {login} from '../../../../actions';
 
-const mapDispatchToProps = dispatch => {
+function mapStateToProps(state) {
+    return {isTokenFetching: state.token.isFetching}
+}
 
-    function setToken(data, expiryDate) {
-        dispatch(token.actions.setToken({data, expiryDate}));
+function mapDispatchToProps(dispatch) {
+
+    function handleLogin(username, password) {
+        dispatch(login({username, password}));
     }
 
     return {
-        setToken
+        handleLogin
     }
-};
+}
 
-export default connect(null, mapDispatchToProps)(Login);
+export default connect(mapStateToProps, mapDispatchToProps)(LoginForm);

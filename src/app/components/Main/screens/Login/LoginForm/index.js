@@ -14,17 +14,22 @@ const defaultInitialValues = {
     password: ''
 };
 
-function LoginForm({onSubmit}) {
+function LoginForm({isTokenFetching, handleLogin}) {
+
+    function onSubmit({username, password}) {
+        handleLogin(username, password);
+    }
+
     return (
         <Formik initialValues={defaultInitialValues}
                 validationSchema={validationSchema}
                 onSubmit={onSubmit}>
             {
-                ({isSubmitting}) =>
+                () =>
                     <Form className='col-10'>
                         <Field name='username' label='نام کاربری' component={FormTextField}/>
                         <Field name='password' label='رمز عبور' type='password' component={FormTextField}/>
-                        <Button type='submit' className='col-12 mt1' disabled={isSubmitting} raised>
+                        <Button type='submit' className='col-12 mt1' disabled={isTokenFetching} raised>
                             ورود
                         </Button>
                     </Form>

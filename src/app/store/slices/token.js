@@ -8,12 +8,13 @@ const initialState = {
         expires_in: null,
         scope: null
     },
-    expiryDate: null
+    expiryDate: null,
+    isFetching: false
 };
 
-function setToken(state, action) {
+function fetchSuccess(state, action) {
     const {data, expiryDate} = action.payload;
-    return {data, expiryDate};
+    return {...state, data, expiryDate, isFetching: false};
 }
 
 // Slice
@@ -21,7 +22,8 @@ export const token = createSlice({
     slice: 'token',
     initialState,
     reducers: {
-        setToken,
-        cleanToken: () => initialState
+        startFetching: (state) => ({...state, isFetching: true}),
+        fetchSuccess,
+        clean: () => initialState
     }
 });

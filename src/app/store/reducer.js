@@ -5,15 +5,22 @@ import storage from 'localforage';
 import {token} from './slices';
 import {tokenTransform} from './transforms/token'
 
+const tokenPersistConfig = {
+    key: 'token',
+    storage: storage,
+    blacklist: ['isFetching'],
+    transforms: [tokenTransform]
+};
+
 const rootReducer = combineReducers({
-    token: token.reducer
+    token: persistReducer(tokenPersistConfig, token.reducer)
 });
 
 const persistConfig = {
     key: 'root',
     storage,
-    transforms: [tokenTransform],
-    stateReconciler: autoMergeLevel2
+    stateReconciler: autoMergeLevel2,
+    blacklist: ['token']
 };
 
 export const persistedReducer = persistReducer(persistConfig, rootReducer);
