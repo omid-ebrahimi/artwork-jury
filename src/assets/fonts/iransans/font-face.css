@@ -22,7 +22,6 @@
 	font-weight: 500;
 }
 
-
 @font-face {
 	font-family: 'IRANSans';
 	src: url('./fonts/eot/IRANSans-UltraLight-web.eot');
@@ -34,7 +33,6 @@
 	font-weight: 200;
 }
 
-
 @font-face {
 	font-family: 'IRANSans';
 	src: url('./fonts/eot/IRANSans-Light-web.eot');
@@ -45,7 +43,6 @@
 	url('./fonts/ttf/IRANSans-Light-web.ttf') format('truetype');
 	font-weight: 300;
 }
-
 
 @font-face {
 	font-family: 'IRANSans';
