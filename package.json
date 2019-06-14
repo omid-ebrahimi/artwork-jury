@@ -12,6 +12,7 @@
     "basscss-layout": "^3.1.0",
     "basscss-margin": "^1.0.9",
     "basscss-typography": "^3.0.4",
+    "client-oauth2": "^4.2.4",
     "formik": "^1.5.7",
     "localforage": "^1.7.3",
     "react": "^16.8.6",
