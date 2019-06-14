@@ -9,7 +9,8 @@ const initialState = {
         scope: null
     },
     expiryDate: null,
-    isFetching: false
+    loading: false,
+    error: ''
 };
 
 function fetchSuccess(state, action) {

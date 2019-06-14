@@ -5,13 +5,13 @@ import LoginForm from "./LoginForm";
 import image from "../../../../../logo.svg";
 import {Headline5} from "@material/react-typography";
 
-function Login({isTokenFetching, handleLogin}) {
+function Login({isTokenLoading, handleLogin}) {
     return (
         <Grid>
             <Row>
                 <MainCell>
                     <Headline5 className='col-10'>ورود به پنل داوری</Headline5>
-                    <LoginForm isTokenFetching={isTokenFetching} handleLogin={handleLogin}/>
+                    <LoginForm isTokenLoading={isTokenLoading} handleLogin={handleLogin}/>
                     <img src={image} className='mt2' width='30%' alt='404 - Not Found'/>
                 </MainCell>
             </Row>

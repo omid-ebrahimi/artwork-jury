@@ -3,7 +3,7 @@ import LoginForm from './component';
 import {login} from '../../../../actions';
 
 function mapStateToProps(state) {
-    return {isTokenFetching: state.token.isFetching}
+    return {isTokenLoading: state.token.loading}
 }
 
 function mapDispatchToProps(dispatch) {

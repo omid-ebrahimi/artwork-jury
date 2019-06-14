@@ -8,7 +8,7 @@ import {tokenTransform} from './transforms/token'
 const tokenPersistConfig = {
     key: 'token',
     storage: storage,
-    blacklist: ['isFetching'],
+    blacklist: ['loading'],
     transforms: [tokenTransform]
 };
 
