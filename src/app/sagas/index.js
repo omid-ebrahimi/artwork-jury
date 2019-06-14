@@ -1,22 +1,12 @@
 import {put, takeEvery, all, call} from 'redux-saga/effects';
 import {LOGIN} from '../actions';
 import {token} from '../store/slices';
+import {getToken} from '../api/oAuth2'
 
-export const tokenObj = {
-    "access_token": "fczaccTBcV4SFsG6eghDcYzng6hVGp",
-    "expires_in": 900,
-    "token_type": "Bearer",
-    "scope": "read write groups",
-    "refresh_token": "2s0yFmDaKzyf8XkPtBlfjRwyLCQ0GbX"
-};
-
-export const delay = (ms) => new Promise(res => setTimeout(res, ms));
-
-export function* login({payload}) {
+export function* login({payload: {username, password}}) {
     yield put(token.actions.startFetching());
-    yield call(delay, 1000);
-    // const TokenObj = ...
-    yield put(token.actions.fetchSuccess({data: tokenObj, expiryDate: new Date()}));
+    const {data, expires} = yield call(getToken, username, password);
+    yield put(token.actions.fetchSuccess({data, expiryDate: expires}));
 }
 
 function* watchLogin() {
