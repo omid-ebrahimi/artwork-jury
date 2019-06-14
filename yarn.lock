@@ -1096,7 +1096,7 @@
   dependencies:
     tslib "^1.9.3"
 
-"@material/button@^1.1.0":
+"@material/button@^1.1.0", "@material/button@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@material/button/-/button-1.1.1.tgz#35af0d295f6ce6e3df9d4978485b5294d794f682"
   integrity sha512-03aEyzZBIeqpgZkqLjro/enz8ORUnfQslBUdAgkPqdjh1X0oIEugr3UaFyC5QlSBTU3j3GIsnKIxWaggkRenpQ==
@@ -1140,6 +1140,17 @@
     "@material/rtl" "^0.42.0"
     "@material/theme" "^1.1.0"
     "@material/typography" "^1.0.0"
+    tslib "^1.9.3"
+
+"@material/icon-button@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@material/icon-button/-/icon-button-1.1.0.tgz#a7c649b3549e6e9ecd9c82a8ef124757bfcc98b8"
+  integrity sha512-3HYOfFhlgpY32HyNt1thQJfTycjy0Cfd4B4IZmt2irfaETdj6JuP0wKs9kdEx1VHTbfWFkJHENArz0lPW+6r2A==
+  dependencies:
+    "@material/base" "^1.0.0"
+    "@material/feature-targeting" "^0.44.1"
+    "@material/ripple" "^1.1.0"
+    "@material/theme" "^1.1.0"
     tslib "^1.9.3"
 
 "@material/layout-grid@^0.41.0":
@@ -1227,6 +1238,15 @@
     react "^16.4.2"
     utility-types "^3.2.1"
 
+"@material/react-snackbar@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@material/react-snackbar/-/react-snackbar-0.13.0.tgz#1a472493e7f6d0ebf2d1c9a77789a2bb4f735af7"
+  integrity sha512-jafAo2enk2MrBFCLBYrR/Qq19Z0E79s3S2Y2teslNw6Op629Yoa1nkKzyjlRsyRvaBlgDyI4r+00IWyiVUmGlQ==
+  dependencies:
+    "@material/snackbar" "^1.0.0"
+    classnames "^2.2.6"
+    react "^16.4.2"
+
 "@material/react-text-field@^0.13.0":
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/@material/react-text-field/-/react-text-field-0.13.0.tgz#9f297a143e2a9dc0d2eb140c6d15655215969703"
@@ -1271,6 +1291,23 @@
   integrity sha512-Jge/h1XBLjdLlam4QMSzVgM99e/N8+elQROPkltqVP7eyLc17BwM3aP5cLVfZDgrJgvsjUxbgAP1H1j8sqmUyg==
   dependencies:
     "@material/feature-targeting" "^0.44.1"
+
+"@material/snackbar@^1.0.0":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@material/snackbar/-/snackbar-1.1.1.tgz#6547ad3f2fa02d49753ceb925aaae0403d101d31"
+  integrity sha512-pnWAJuEC+Q+EF95kjEnBuQu7P6hSWeJQ/R1ljd1VthUd87M/uBhqOcoXqGrPbFVYlOj01Fy5/wctf9wFIJdQiA==
+  dependencies:
+    "@material/animation" "^1.0.0"
+    "@material/base" "^1.0.0"
+    "@material/button" "^1.1.1"
+    "@material/dom" "^1.1.0"
+    "@material/icon-button" "^1.1.0"
+    "@material/ripple" "^1.1.0"
+    "@material/rtl" "^0.42.0"
+    "@material/shape" "^1.1.1"
+    "@material/theme" "^1.1.0"
+    "@material/typography" "^1.0.0"
+    tslib "^1.9.3"
 
 "@material/textfield@^1.1.1":
   version "1.1.1"
