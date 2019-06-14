@@ -8,7 +8,7 @@ import {tokenTransform} from './transforms/token'
 const tokenPersistConfig = {
     key: 'token',
     storage: storage,
-    blacklist: ['loading'],
+    blacklist: ['loading', 'error'],
     transforms: [tokenTransform]
 };
 

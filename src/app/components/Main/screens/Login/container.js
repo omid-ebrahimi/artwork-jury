@@ -3,7 +3,11 @@ import LoginForm from './component';
 import {login} from '../../../../actions';
 
 function mapStateToProps(state) {
-    return {isTokenLoading: state.token.loading}
+    const {loading, error} = state.token;
+    return {
+        isTokenLoading: loading,
+        loginErrorMessage: error
+    }
 }
 
 function mapDispatchToProps(dispatch) {
