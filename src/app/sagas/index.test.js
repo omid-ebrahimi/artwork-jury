@@ -1,31 +1,32 @@
 import {call, put} from 'redux-saga/effects';
-import {login, delay, tokenObj} from './index';
+import {login} from './index';
 import {token} from '../store/slices';
+import {getToken} from "../api/oAuth2";
 
-it('does login steps', () => {
-    const gen = login({payload: {}});
+it('should fails with wrong username', () => {
+    // arrange
+    const username = 'wrong-username';
+    const password = '';
 
+    // act
+    const gen = login({payload: {username, password}});
+
+    // assert
     expect(
         gen.next().value
     ).toEqual(
-        put(token.actions.startFetching())
+        put(token.actions.startLoading())
     );
 
     expect(
         gen.next().value
     ).toEqual(
-        call(delay, 1000)
+        call(getToken, username, password)
     );
 
     expect(
         gen.next().value
     ).toEqual(
-        put(token.actions.fetchSuccess({data: tokenObj, expiryDate: new Date()}))
-    );
-
-    expect(
-        gen.next()
-    ).toEqual(
-        {done: true, value: undefined}
+        put(token.actions.loadingFailed({error: "Cannot read property 'data' of undefined"}))
     );
 });
